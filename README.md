@@ -1,6 +1,6 @@
 # Việt Phục Remix
 
-Ứng dụng React + TypeScript khám phá Việt phục, phối outfit trên minh họa SVG, gợi ý GPT qua OpenAI và Lookbook cục bộ. Nền trang chủ dùng đúng ảnh người dùng cung cấp tại `public/imperial-red-background.png`.
+Ứng dụng React + TypeScript khám phá Việt phục, phối outfit trên minh họa SVG, gợi ý Gemini hoặc GPT và Lookbook cục bộ. Nền trang chủ dùng đúng ảnh người dùng cung cấp tại `public/imperial-red-background.png`. Xem [hệ minh họa hybrid và cấu hình Gemini](docs/hybrid-visuals.md).
 
 ## Chạy ứng dụng
 
@@ -18,18 +18,20 @@ Mở `.env` ở thư mục gốc và điền khóa lấy từ [OpenAI API keys](
 
 ```dotenv
 OPENAI_API_KEY=your_private_api_key
-OPENAI_MODEL=gpt-4.1-mini
+OPENAI_BASE_URL=https://api.vilao.ai/v1
+OPENAI_API_MODE=chat_completions
+OPENAI_MODEL=gpt-5.4-mini
 OPENAI_IMAGE_MODEL=
 PORT=3001
 ```
 
-Thay `your_private_api_key` bằng khóa thật, lưu rồi khởi động lại `npm run dev`. `.env` được Git bỏ qua; không dán khóa vào chat, mã frontend hay localStorage. Khóa chỉ được máy chủ gửi tới `https://api.openai.com/v1/`. `.env` local không cấu hình khóa cho bản Sites đã triển khai.
+Thay `your_private_api_key` bằng khóa của dịch vụ tương ứng, lưu rồi khởi động lại `npm run dev`. `.env` được Git bỏ qua; không dán khóa vào chat, mã frontend hay localStorage. Máy chủ gửi khóa tới endpoint `OPENAI_BASE_URL` đã cấu hình. Khi bỏ biến này, mặc định là `https://api.openai.com/v1`. Base URL phải dùng HTTPS và không chứa thông tin đăng nhập, query hay fragment. `OPENAI_API_MODE=chat_completions` dùng `/chat/completions` cho Vilao; bỏ biến này hoặc đặt `responses` để dùng `/responses`. Schema JSON được gửi trong cả request API và chỉ dẫn để tương thích gateway. Model cấu hình cần được dịch vụ đó hỗ trợ. `.env` local không cấu hình khóa cho bản Sites đã triển khai.
 
-`OPENAI_MODEL` có thể thay bằng model hỗ trợ Responses API và Structured Outputs mà tài khoản của bạn được dùng. Endpoint `POST /api/generate-outfit` kiểm tra đầu vào bằng Zod, gửi ngữ cảnh trang phục, dùng JSON schema strict, kiểm tra kết quả và áp dụng mức cảnh báo tối thiểu từ dữ liệu văn hóa. Mỗi lượt gọi có timeout 25 giây, thử lại tối đa một lần khi lỗi mạng, giới hạn lượt gọi hoặc lỗi máy chủ. Dùng `store:false` cho Responses. Key sai, thiếu key hoặc kết quả không hợp lệ trả ba **gợi ý mẫu có nhãn**. Không trả thông báo lỗi thô có thể chứa thông tin bí mật.
+`OPENAI_MODEL` có thể thay bằng model hỗ trợ Responses API và Structured Outputs mà tài khoản của bạn được dùng. Endpoint `POST /api/generate-outfit` kiểm tra đầu vào bằng Zod, gửi ngữ cảnh trang phục, dùng JSON schema strict, kiểm tra kết quả và áp dụng mức cảnh báo tối thiểu từ dữ liệu văn hóa. GPT có timeout 90 giây; Gemini 25 giây. Thử lại tối đa một lần khi lỗi kết nối, giới hạn lượt gọi hoặc lỗi máy chủ; không tự gọi lại khi hết thời gian chờ hoặc JSON sai. GPT-5 dùng mức suy luận thấp. Giao diện chờ tối đa 190 giây. Dùng `store:false` cho Responses. Key sai, thiếu key hoặc kết quả không hợp lệ trả ba **gợi ý mẫu có nhãn**. Không trả thông báo lỗi thô có thể chứa thông tin bí mật.
 
 API được gọi qua `fetch` phía máy chủ, không cần thêm SDK. Node và Worker dùng chung logic này. Cấu trúc và API đối chiếu với [OpenAI Responses](https://developers.openai.com/api/reference/resources/responses/methods/create) và [Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs).
 
-Nếu muốn tạo ảnh và có quyền dùng model ảnh OpenAI, điền `OPENAI_IMAGE_MODEL` với tên model GPT Image hỗ trợ Images API. Nút tạo minh họa gọi `/api/visualize` phía máy chủ qua `/v1/images/generations`; mặc định để trống để không bật dịch vụ ảnh. Chưa cấu hình hoặc lỗi thì vẫn giữ minh họa tương tác và mô tả. Không có tích hợp thử đồ lên ảnh người thật. Tạo ảnh chỉ chạy khi người dùng nhấn nút riêng.
+Nếu muốn tạo ảnh và có quyền dùng model ảnh, điền `OPENAI_IMAGE_MODEL` với tên model hỗ trợ Images API của dịch vụ đã cấu hình. Thẻ gợi ý AI tự tạo minh họa thời trang chân thực khi model ảnh được bật; nút riêng cho phép thử lại. Mặc định để trống: thẻ giữ SVG và ẩn nút chưa khả dụng. Khi lỗi, bản phối SVG vẫn giữ nguyên. Trang phục cộng đồng cần mẫu đã xác minh trước khi tạo ảnh chân thực. Không có tích hợp thử đồ lên ảnh người thật.
 
 ## Kiểm tra và bản production
 
@@ -51,12 +53,12 @@ Hero có hạt sáng, cánh hoa, ánh sáng nhẹ, khung chân dung chuyển đ�
 
 ## Phạm vi demo
 
-- Bảy mục điều hướng, tìm kiếm không phân biệt dấu, sáu bộ lọc và trang chi tiết cho 19 loại trang phục.
-- Áo dài, ngũ thân, tứ thân và bà ba có phom SVG riêng, phản ứng với màu chính, màu phối và phụ kiện. Các cổ phục khác là minh họa đơn giản cần rà soát; trang phục cộng đồng hiển thị ý niệm và giữ màu minh họa cố định cho đến khi có mẫu xác minh.
+- Sáu mục điều hướng; bỏ trang Thử đồ AI và ảnh tham chiếu. Tìm kiếm không phân biệt dấu, sáu bộ lọc và trang chi tiết cho 19 loại trang phục. Liên kết cũ `#/tryon` mở Remix Studio.
+- Cả 19 loại có hình vector riêng trong thư viện. Studio có các lớp nhân vật, áo, trang trí và phụ kiện tách biệt. Màu, phụ kiện, avatar và tùy chọn trang trí được giữ trong gợi ý AI. Trang phục cộng đồng là sơ đồ nhập môn theo biến thể có ghi chú nguồn, cần cộng đồng/chuyên gia rà soát; màu là lựa chọn đương đại.
 - Lookbook lưu bằng localStorage: đặt tên trước khi lưu, so sánh tối đa ba outfit, xóa, xuất PNG và chia sẻ nội dung qua hệ thống hoặc sao chép. Dữ liệu chỉ có trên trình duyệt hiện tại.
-- Ảnh tham chiếu chỉ dùng object URL trong bộ nhớ trình duyệt, không gửi API, không lưu localStorage; đóng trang hoặc xóa ảnh sẽ giải phóng. Nhân vật minh họa không dự đoán độ vừa vặn.
-- Không có phần trăm xác thực văn hóa. Nguồn tổng quan đã đối chiếu được liên kết; các mục thiếu nguồn chuyên khảo được ghi rõ **cần rà soát**. SVG là hình cách điệu, không phải ảnh hiện vật hay phục dựng được kiểm chứng.
-- Các bài giới thiệu ngắn phục vụ demo; nội dung ngũ thân, tứ thân, Nhật Bình và trang phục cộng đồng cần chuyên gia/cộng đồng rà soát trước khi dùng làm tài liệu giáo dục chính thức.
+- Nhân vật SVG chỉ giúp xem màu và phụ kiện, không dự đoán độ vừa vặn.
+- 19 mục có bài đọc dẫn nguồn và phạm vi tư liệu; 8 bài “Chuyện chiếc áo” dùng chung dữ kiện đã đối chiếu. Danh mục nằm trong `src/data/cultural-content.json`; phương pháp và giới hạn được ghi tại `docs/content-sources.md`.
+- Nguồn tổng quan không chứng nhận mẫu phục dựng. SVG/ảnh AI và gợi ý phối đương đại được ghi rõ. Ghi chú văn hóa trong kết quả GPT được máy chủ thay bằng dữ kiện biên tập có nguồn, không dùng mô hình làm nguồn lịch sử.
 - Font tải từ Google Fonts; có font hệ thống dự phòng khi ngoại tuyến.
 
-Ảnh tham chiếu của người dùng không được gửi cho OpenAI. Minh họa AI là hình thời trang tạo từ mô tả và có thể sai chi tiết, cần kiểm tra thủ công. Lookbook cũ có nhãn Gemini được giữ nguyên nguồn gốc; các gợi ý AI mới dùng GPT.
+Minh họa AI là hình thời trang tạo từ thuộc tính đã chọn và có thể sai chi tiết, cần kiểm tra thủ công. Nhãn gợi ý ghi đúng nhà cung cấp (Gemini/GPT) hoặc gợi ý mẫu.

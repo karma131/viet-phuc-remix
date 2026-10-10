@@ -1,0 +1,97 @@
+{
+  "ao-dai": {
+    "src": "/garments/ao-dai-traditional-v2.webp",
+    "small": "/garments/ao-dai-traditional-v2-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "ao-dai-cach-tan": {
+    "src": "/garments/ao-dai-cach-tan.webp",
+    "small": "/garments/ao-dai-cach-tan-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "ao-dai-nam": {
+    "src": "/garments/ao-dai-nam.webp",
+    "small": "/garments/ao-dai-nam-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "ngu-than": {
+    "src": "/garments/ngu-than-final.webp",
+    "small": "/garments/ngu-than-final-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "ao-tac": {
+    "src": "/garments/ao-tac.webp",
+    "small": "/garments/ao-tac-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "tu-than": {
+    "src": "/garments/tu-than.webp",
+    "small": "/garments/tu-than-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "ba-ba": {
+    "src": "/garments/ba-ba.webp",
+    "small": "/garments/ba-ba-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "nhat-binh": {
+    "src": "/garments/nhat-binh-reference-v2.webp",
+    "small": "/garments/nhat-binh-reference-v2-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "giao-linh": {
+    "src": "/garments/giao-linh.webp",
+    "small": "/garments/giao-linh-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "vien-linh": {
+    "src": "/garments/vien-linh.webp",
+    "small": "/garments/vien-linh-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "doi-kham": {
+    "src": "/garments/doi-kham.webp",
+    "small": "/garments/doi-kham-400.webp",
+    "label": "Minh họa AI · Ảnh sản phẩm"
+  },
+  "tay": {
+    "src": "/garments/tay.webp",
+    "small": "/garments/tay-400.webp",
+    "label": "Minh họa AI · Gợi mở Tày"
+  },
+  "mong": {
+    "src": "/garments/mong.webp",
+    "small": "/garments/mong-400.webp",
+    "label": "Minh họa AI · Gợi mở Mông Hoa"
+  },
+  "thai": {
+    "src": "/garments/thai.webp",
+    "small": "/garments/thai-400.webp",
+    "label": "Minh họa AI · Gợi mở áo cóm nữ Thái"
+  },
+  "dao": {
+    "src": "/garments/dao.webp",
+    "small": "/garments/dao-400.webp",
+    "label": "Minh họa AI · Gợi mở Dao Đỏ"
+  },
+  "muong": {
+    "src": "/garments/muong.webp",
+    "small": "/garments/muong-400.webp",
+    "label": "Minh họa AI · Gợi mở Mường"
+  },
+  "cham": {
+    "src": "/garments/cham.webp",
+    "small": "/garments/cham-400.webp",
+    "label": "Minh họa AI · Gợi mở Chăm"
+  },
+  "khmer": {
+    "src": "/garments/khmer.webp",
+    "small": "/garments/khmer-400.webp",
+    "label": "Minh họa AI · Gợi mở Khmer Nam Bộ"
+  },
+  "e-de": {
+    "src": "/garments/e-de.webp",
+    "small": "/garments/e-de-400.webp",
+    "label": "Minh họa AI · Gợi mở Ê Đê"
+  }
+}

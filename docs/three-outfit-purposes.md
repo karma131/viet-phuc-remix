@@ -1,0 +1,9 @@
+# Three outfit purposes
+
+The original is authoritative and restored server-side even if provider output drifts. GPT/Gemini determine the other two palettes and accessory sets using structured JSON. Elegance locks the main color; creativity must change it. Garment ID, geometry, occasion, avatar and decorative-pattern setting remain locked in all three.
+
+`server/variants.js` checks RGB distances (35 for the elegant secondary change, 80 for the creative main change, 120 for creative primary/secondary contrast), validates variant accessory IDs against garment data and computes change metadata. Duplicate or unsupported suggestions return labeled samples rather than being presented as successful GPT output. Sample mode uses the same three purposes with explicit sample badges. Provider keys and optional image-model configuration remain server-side.
+
+Studio cards show the original, an elegant proposal and a creative proposal. Each proposal explains its styling, displays changes against the original and has an Apply to Studio button. Applying updates colors, accessories, avatar and pattern controls without discarding the comparison cards. Existing save, compare, export, share and image fallback behavior is retained. Earlier saved outfits without purpose metadata continue to render.
+
+Validation: production build and 26 tests pass, including provider normalization, duplicate rejection, accessory constraints and fallback coverage for all 19 garments. A live request through the configured GPT gateway returned three distinct contemporary áo dài variants: the original pink/ivory with mini bag and pearls; elegant pink/navy with flats; creative teal/orange with silk scarf and mini bag. Browser verification confirmed that applying the creative card updates Studio to #264653 / #F4A261 / #E76F51 and silk/mini accessories. The hosted site has not been republished.

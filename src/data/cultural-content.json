@@ -1,0 +1,371 @@
+{
+  "reviewedAt": "2026-10-10",
+  "references": [
+    {
+      "id": "ao-dai",
+      "title": "All about ao dai: Vietnam's national dress",
+      "author": "Cục Du lịch Quốc gia Việt Nam · Vietnam Tourism",
+      "url": "https://image.vietnam.travel/things-to-do/ao-dai-vietnam",
+      "category": "Áo dài đương đại",
+      "description": "Giới thiệu cấu trúc, biến thể và cách sử dụng áo dài. Không dùng tên bài để khẳng định một danh hiệu pháp lý về quốc phục."
+    },
+    {
+      "id": "ngu-than",
+      "title": "Độc đáo áo ngũ thân - Bản sắc văn hoá Việt",
+      "author": "VietnamPlus · Thông tấn xã Việt Nam",
+      "url": "https://mega.vietnamplus.vn/doc-dao-ao-ngu-than-ban-sac-van-hoa-viet-5419.html",
+      "category": "Cấu trúc áo ngũ thân",
+      "description": "Bài chuyên đề mô tả thân áo, cổ, khuy, tay và những cách giải thích biểu tượng. Các diễn giải đạo lý được trình bày là quan điểm, không phải chứng minh nguồn gốc."
+    },
+    {
+      "id": "ao-tac",
+      "title": "Áo tấc, cổ phục quý đang hồi sinh",
+      "author": "Cổng thông tin du lịch Huế · bài từ Báo Thừa Thiên Huế",
+      "url": "https://huetourism.gov.vn/ao-tac-co-phuc-quy-dang-hoi-sinh/?pid=MjExMjB8Y3NkbGRs0",
+      "category": "Áo ngũ thân tay thụng",
+      "description": "Mô tả cấu trúc và bối cảnh lễ phục. Không áp dụng mọi kích thước trong bài cho tất cả hiện vật."
+    },
+    {
+      "id": "tu-than",
+      "title": "Áo dài Việt Nam qua các thời kỳ lịch sử – Một triển lãm không thể bỏ qua",
+      "author": "Sở Văn hóa, Thể thao và Du lịch thành phố Huế · Đức Lộc",
+      "url": "https://svhttdl.hue.gov.vn/tin-trong-nuoc/ao-dai-viet-nam-qua-cac-thoi-ky-lich-su-mot-trien-lam-khong-the-bo-qua.html",
+      "category": "Áo tứ thân và lịch sử áo dài",
+      "description": "Bài giới thiệu triển lãm của Bảo tàng Lịch sử thành phố Huế và Bảo tàng Quảng Ninh năm 2025; dùng phần mô tả cấu trúc tứ thân."
+    },
+    {
+      "id": "ba-ba",
+      "title": "áo bà ba · Collection object nmah_1313335",
+      "author": "Smithsonian · National Museum of American History",
+      "url": "https://americanhistory.si.edu/collections/object/nmah_1313335",
+      "category": "Hiện vật áo bà ba",
+      "description": "Hồ sơ một chiếc áo cụ thể do Catherine Hann hiến tặng. Mô tả hiện vật không đủ để xác định người sáng tạo hay niên đại khởi đầu của toàn bộ kiểu áo."
+    },
+    {
+      "id": "nhat-binh",
+      "title": "Áo Nhật Bình – Một di sản văn hóa quý của Cố đô Huế",
+      "author": "Phan Thanh Hải · Giám đốc Sở Văn hóa và Thể thao Thừa Thiên Huế; Khám phá Huế đăng lại",
+      "url": "https://khamphahue.com.vn/Hue-24h/Thong-bao/tid/Ao-Nhat-Binh-Mot-di-san-van-hoa-quy-cua-Co-do-Hue.html/pid/11533/cid/28",
+      "category": "Nhật Bình và thuật ngữ đối khâm",
+      "description": "Bài ngày 03/03/2022 về cấu trúc và quy định trang phục thời Nguyễn. Không dùng để chứng nhận ảnh AI hay mẫu phối trong Studio là phục dựng."
+    },
+    {
+      "id": "giao-linh",
+      "title": "Áo Giao Lĩnh: Ngược dòng lịch sử cùng tinh hoa cổ phục Việt",
+      "author": "VietnamPlus · Thông tấn xã Việt Nam",
+      "url": "https://www.vietnamplus.vn/video-ao-giao-linh-nguoc-dong-lich-su-cung-tinh-hoa-co-phuc-viet-post609553.vnp",
+      "category": "Nhận diện áo giao lĩnh",
+      "description": "Bài và video giới thiệu thuật ngữ cổ giao nhau; không cung cấp một bộ rập dùng chung cho mọi thời kỳ."
+    },
+    {
+      "id": "vien-linh",
+      "title": "Traditional costumes show marks Vietnam Cultural Heritage Day",
+      "author": "VietnamPlus · Thông tấn xã Việt Nam",
+      "url": "https://en.vietnamplus.vn/traditional-costumes-show-marks-vietnam-cultural-heritage-day-post245658.vnp",
+      "category": "Nhận diện viên lĩnh; phương pháp tái hiện",
+      "description": "Phóng sự ảnh về sự kiện năm 2022. Chú thích phân biệt cổ tròn và cổ giao; các trang phục trong sự kiện là sản phẩm tái hiện."
+    },
+    {
+      "id": "ethnic-overview",
+      "title": "Traditional ethnic costumes in Vietnam",
+      "author": "Cục Du lịch Quốc gia Việt Nam · Vietnam Tourism",
+      "url": "https://vietnam.travel/things-to-do/vietnam-traditional-dress-ethnic-groups",
+      "category": "Tày, Mông, Dao, Chăm",
+      "description": "Nguồn nhập môn có mục riêng theo cộng đồng. Website chỉ dùng mô tả cơ bản, không lấy số lượng dân tộc trong bài hay suy diễn ý nghĩa nghi lễ."
+    },
+    {
+      "id": "thai",
+      "title": "Chiếc khăn Piêu của người phụ nữ Thái đen",
+      "author": "VOV5 · Đài Tiếng nói Việt Nam",
+      "url": "https://vovworld.vn/vi-VN/sac-mau-cac-dan-toc-viet-nam/chiec-khan-pieu-cua-nguoi-phu-nu-thai-den-1156495.vov5",
+      "category": "Khăn Piêu của phụ nữ Thái Đen",
+      "description": "Bài có lời giải thích của cán bộ nghiên cứu Bảo tàng Dân tộc học. Phạm vi là khăn Piêu, không phải toàn bộ trang phục của mọi nhóm Thái."
+    },
+    {
+      "id": "muong",
+      "title": "Nghề dệt và nét tinh hoa trên trang phục của người Mường",
+      "author": "VOV5 · Đài Tiếng nói Việt Nam",
+      "url": "https://vovworld.vn/vi-VN/sac-mau-cac-dan-toc-viet-nam/nghe-det-va-net-tinh-hoa-tren-trang-phuc-cua-nguoi-muong-1233794.vov5",
+      "category": "Nghề dệt và nữ phục Mường",
+      "description": "Bài phỏng vấn người thực hành nghề dệt và nhà nghiên cứu ở Hòa Bình; phân biệt đặc điểm chung với biến thể từng xứ Mường."
+    },
+    {
+      "id": "khmer",
+      "title": "Trang phục cưới truyền thống của phụ nữ Khmer ở Nam Bộ",
+      "author": "Trần Thanh Tú · Bảo tàng Phụ nữ Nam Bộ",
+      "url": "https://baotangphunu.com/trang-phc-ci-truyn-thng-ca-ph-n-khmer-nam-b-2/",
+      "category": "Trang phục cưới Khmer Nam Bộ",
+      "description": "Bài ngày 27/05/2014 gắn với trưng bày hiện vật của bảo tàng. Phạm vi là trang phục cưới, không thay cho mô tả trang phục sinh hoạt."
+    },
+    {
+      "id": "e-de",
+      "title": "Đặc sắc trang phục truyền thống của người Ê đê",
+      "author": "Nguyễn Hồng · Báo Đắk Nông, lưu trên Báo Lâm Đồng",
+      "url": "https://baolamdong.vn/ac-sac-trang-phuc-truyen-thong-cua-nguoi-e-de-137057.html",
+      "category": "Cấu trúc trang phục Ê Đê",
+      "description": "Bài ngày 29/07/2022 mô tả áo nữ chui đầu, váy tấm và trang phục nam. Website không sao chép diễn giải tâm linh của hoa văn vào gợi ý phối đồ."
+    },
+    {
+      "id": "tay",
+      "title": "Các biên tập viên, phát thanh viên VOV trình diễn trang phục dân tộc tại Hội báo toàn quốc năm 2022",
+      "author": "VOV · Đài Tiếng nói Việt Nam",
+      "url": "https://vov.vn/xa-hoi/cac-bien-tap-vien-phat-thanh-vien-vov-trinh-dien-trang-phuc-dan-toc-tai-hoi-bao-toan-quoc-post936861.vov",
+      "category": "Mô tả trang phục Tày tại sự kiện",
+      "description": "Phóng sự trực tiếp về chương trình của VOV, có chú thích riêng cho trang phục nam và nữ Tày. Không dùng mẫu trình diễn như đại diện cho mọi địa phương."
+    },
+    {
+      "id": "mong",
+      "title": "Nghệ thuật vẽ trang sáp ong của người H'mông Hoa",
+      "author": "VTV · Đài Truyền hình Việt Nam",
+      "url": "https://vtv.vn/doi-song/nghe-thuat-ve-trang-sap-ong-cua-nguoi-hmong-hoa-20230521090341227.htm",
+      "category": "Kỹ thuật trang trí của Mông Hoa ở Chế Cu Nha",
+      "description": "Bài ngày 21/05/2023 mô tả vẽ sáp ong, nhuộm chàm, thêu và ghép vải. Phạm vi là địa phương được bài khảo sát."
+    },
+    {
+      "id": "dao",
+      "title": "Độc đáo trang phục phụ nữ dân tộc Dao Đỏ",
+      "author": "Trang thông tin Tuyên giáo và Dân vận Cao Bằng",
+      "url": "https://tuyengiaocaobang.vn/index.php/van-hoa-van-nghe/doc-dao-trang-phuc-phu-nu-dan-toc-dao-do-980.html",
+      "category": "Nữ phục Dao Đỏ tại Cao Bằng",
+      "description": "Bài ngày 04/05/2023 trình bày các lớp áo, khăn quấn đầu và thêu thủ công. Các chi tiết được giữ trong phạm vi Dao Đỏ tại Cao Bằng."
+    }
+  ],
+  "entries": {
+    "ao-dai": {
+      "source": "ao-dai",
+      "description": "Áo dài đương đại có hai tà, mặc cùng quần dài; cổ, tay và chất liệu có nhiều biến thể.",
+      "features": [
+        "Hai tà trước và sau",
+        "Mặc cùng quần dài",
+        "Cổ và tay có nhiều kiểu"
+      ],
+      "origin": "Vietnam Tourism ghi nhận áo dài biến đổi qua thời gian, với nhiều kiểu cổ, tay và độ dài.",
+      "context": "Nguồn giới thiệu việc mặc áo dài vào Tết, lễ cưới và chụp ảnh. Mẫu trên website là minh họa đương đại.",
+      "scope": "Cấu trúc và cách dùng đương đại; không khẳng định danh hiệu pháp lý về quốc phục."
+    },
+    "ao-dai-cach-tan": {
+      "source": "ao-dai",
+      "description": "Những thiết kế biến đổi cổ, tay hoặc độ dài tà trên nền áo dài đương đại.",
+      "features": [
+        "Cổ và tay được biến đổi",
+        "Độ dài tà tùy thiết kế"
+      ],
+      "origin": "Vietnam Tourism giới thiệu cổ thuyền, tay ngắn và tà ngắn trong thiết kế áo dài hiện đại.",
+      "context": "Các mẫu thay đổi tỷ lệ trong Studio được gọi rõ là cách tân.",
+      "scope": "Không coi mẫu cách tân là phục dựng của một triều đại."
+    },
+    "ao-dai-nam": {
+      "source": "ao-dai",
+      "description": "Áo dài dành cho nam trong thực hành đương đại, phân biệt với áo ngũ thân theo cấu trúc.",
+      "features": [
+        "Áo dài mặc cùng quần",
+        "Phân biệt với ngũ thân"
+      ],
+      "origin": "Vietnam Tourism giới thiệu áo dài cho cả nam và nữ, gồm cô dâu và chú rể.",
+      "context": "Mẫu áo dài nam đương đại trên website không mặc nhiên là áo ngũ thân.",
+      "scope": "Không đồng nhất áo dài nam đương đại với áo ngũ thân."
+    },
+    "ngu-than": {
+      "source": "ngu-than",
+      "description": "Áo năm thân, có thân con bên trong, cổ đứng và năm khuy; tay chẽn là một dạng thường phục.",
+      "features": [
+        "Năm thân, gồm thân con",
+        "Cổ đứng, năm khuy",
+        "Tay chẽn, thân không chiết eo"
+      ],
+      "origin": "VietnamPlus mô tả áo ghép năm thân theo chiều dọc, với một thân con phía trong. Áo có dạng tay chẽn và tay rộng, được sử dụng bởi cả nam và nữ.",
+      "context": "Bài chuyên đề dẫn cách giải thích bốn thân ngoài gắn với tứ thân phụ mẫu, thân trong với người mặc. Đây là diễn giải biểu tượng được dẫn trong nguồn, không phải kết luận về thời điểm ra đời.",
+      "scope": "Đối chiếu hiện vật khi xác định chiều dài, khuy và chất liệu; nguồn tổng quan không xác nhận mẫu SVG.",
+      "requiresContext": true
+    },
+    "ao-tac": {
+      "source": "ao-tac",
+      "description": "Áo ngũ thân tay rộng, thường được nhắc đến trong bối cảnh lễ phục.",
+      "features": [
+        "Năm thân áo",
+        "Tay dài, rộng",
+        "Cổ đứng, năm khuy"
+      ],
+      "origin": "Cổng thông tin du lịch Huế giới thiệu áo tấc là tên gọi của áo ngũ thân tay rộng, còn gọi là áo lễ, áo thụng hoặc áo rộng.",
+      "context": "Nguồn ghi nhận việc sử dụng trong lễ nghi, lễ hội và ngày Tết, ở cả nam và nữ. Chất liệu, màu và phụ kiện thay đổi theo bối cảnh.",
+      "scope": "Giữ tay rộng khi giới thiệu cấu trúc; không suy ra phẩm cấp chỉ từ màu trong Studio.",
+      "requiresContext": true
+    },
+    "tu-than": {
+      "source": "tu-than",
+      "description": "Áo bốn thân với vạt trước mở, đi cùng yếm, váy và dây lưng trong mô tả trang phục Bắc Bộ.",
+      "features": [
+        "Bốn thân áo",
+        "Vạt trước không cài khuy",
+        "Yếm, váy và dây lưng"
+      ],
+      "origin": "Bài giới thiệu triển lãm trên cổng Sở Văn hóa Huế mô tả hai thân phía sau được nối, hai thân trước để mở; bên trong có yếm và áo cánh.",
+      "context": "Nguồn ghi nhận áo tứ thân được sử dụng trong lễ hội truyền thống ở một số vùng miền Bắc. Minh họa sân khấu và trang phục sinh hoạt cần được phân biệt.",
+      "scope": "Mô tả cấu trúc từ bài triển lãm; không ấn định một niên đại khởi đầu.",
+      "requiresContext": true
+    },
+    "ba-ba": {
+      "source": "ba-ba",
+      "description": "Áo ngắn mở phía trước; một hiện vật ở Smithsonian có túi đắp và xẻ hông.",
+      "features": [
+        "Áo ngắn mở trước",
+        "Túi đắp trên hiện vật tham khảo",
+        "Xẻ hông trên hiện vật tham khảo"
+      ],
+      "origin": "Smithsonian lưu chiếc áo bà ba của Catherine Hann, người đã mặc áo này khi rời Việt Nam bằng thuyền năm 1981. Hồ sơ ghi rõ cấu tạo và câu chuyện người sử dụng.",
+      "context": "Hiện vật cho thấy trang phục có thể lưu giữ ký ức cá nhân và di cư. Một chiếc áo không đủ để xác định nguồn gốc duy nhất của kiểu áo bà ba.",
+      "scope": "Đặc điểm mô tả gắn với hiện vật nmah_1313335, không áp dụng cho mọi áo bà ba."
+    },
+    "nhat-binh": {
+      "source": "nhat-binh",
+      "description": "Trang phục nữ thời Nguyễn, nổi bật với cổ bản rộng tạo mảng chữ nhật trước ngực.",
+      "features": [
+        "Cổ bản rộng dạng chữ nhật",
+        "Hai vạt đối nhau",
+        "Màu và hoa văn có quy định"
+      ],
+      "origin": "Theo Phan Thanh Hải, Nhật Bình gắn với nữ giới cung đình Nguyễn; bài nêu quy định năm 1807.",
+      "context": "Màu, chất liệu và phụ kiện gắn với cấp bậc. Bài ghi nhận Nhật Bình tiếp nối trong hôn lễ ở Huế.",
+      "scope": "Bài chuyên khảo phổ thông; mẫu ảnh và SVG không được xác nhận là phục dựng.",
+      "requiresContext": true
+    },
+    "giao-linh": {
+      "source": "giao-linh",
+      "description": "Tên gọi nhận diện kiểu cổ áo giao nhau trước ngực.",
+      "features": [
+        "Cổ áo giao nhau",
+        "Vạt chéo trước ngực"
+      ],
+      "origin": "VietnamPlus giải thích “lĩnh” là cổ áo và giới thiệu giao lĩnh là kiểu cổ giao nhau trong cổ phục Việt.",
+      "context": "Nhận diện cổ áo là bước đầu; phục dựng còn cần mẫu tư liệu cho tay, thân, lớp mặc trong và người sử dụng.",
+      "scope": "Không ấn định niên đại, tầng lớp hay một bộ rập chung từ tên kiểu cổ.",
+      "requiresContext": true
+    },
+    "vien-linh": {
+      "source": "vien-linh",
+      "description": "Kiểu áo được nhận diện bằng cổ tròn trong phóng sự ảnh về tái hiện cổ phục.",
+      "features": [
+        "Cổ tròn",
+        "Chi tiết phụ thuộc mẫu tư liệu"
+      ],
+      "origin": "Phóng sự ảnh VietnamPlus năm 2022 gọi kiểu cổ tròn là viên lĩnh, phân biệt với cổ giao của giao lĩnh.",
+      "context": "Phóng sự mô tả các nhóm sử dụng văn bản, tranh, ảnh và tượng để nghiên cứu tái hiện. Các sản phẩm trình diễn vẫn có chi tiết chưa chắc chắn.",
+      "scope": "Nguồn xác nhận cách nhận diện cổ; chưa xác nhận kiểu tay, rập hoặc phẩm cấp của mẫu trên website.",
+      "requiresContext": true
+    },
+    "doi-kham": {
+      "source": "nhat-binh",
+      "description": "Tên kiểu hai vạt đối nhau; bài nghiên cứu Nhật Bình dùng thuật ngữ đối khâm để mô tả áo.",
+      "features": [
+        "Hai vạt trước đối nhau",
+        "Lớp mặc trong cần đối chiếu"
+      ],
+      "origin": "Phan Thanh Hải dùng “phi phong đối khâm” để mô tả Nhật Bình.",
+      "context": "Studio chỉ minh họa hai vạt đối nhau; chưa xác định một hiện vật cho mẫu áo này.",
+      "scope": "Phạm vi thuật ngữ và cấu trúc; không gán mẫu này cho triều đại cụ thể.",
+      "requiresContext": true
+    },
+    "tay": {
+      "source": "tay",
+      "description": "Sắc chàm và đen là đặc điểm được VOV ghi nhận trong trang phục Tày, với cách may khác nhau ở nam và nữ.",
+      "features": [
+        "Vải bông hoặc lụa màu chàm, đen",
+        "Áo nữ và nam có cấu trúc riêng"
+      ],
+      "origin": "Phóng sự của VOV tại Hội báo năm 2022 mô tả áo nữ xẻ ngực, cổ tròn, phối váy; áo nam có dạng tứ thân, cổ đứng tròn và xẻ hông.",
+      "context": "Nguồn cho biết cách trang trí nhìn chung tiết chế. Khi đọc trang phục Tày, cần xác định người mặc và địa phương thay vì dựa vào riêng màu chàm.",
+      "scope": "Nguồn là mẫu được trình diễn tại sự kiện VOV; ảnh AI không sao chép hay xác nhận một bộ hiện vật.",
+      "requiresContext": true
+    },
+    "mong": {
+      "source": "mong",
+      "description": "Kỹ thuật vẽ sáp ong, nhuộm chàm, thêu và ghép vải được VTV ghi nhận ở trang phục Mông Hoa tại Chế Cu Nha.",
+      "features": [
+        "Vẽ hoa văn bằng sáp ong",
+        "Nhuộm chàm",
+        "Thêu và ghép vải"
+      ],
+      "origin": "Bài VTV mô tả trang phục Mông Hoa ở Chế Cu Nha được làm từ vải lanh với hoa văn vẽ sáp ong, nhuộm chàm, kết hợp thêu và ghép vải.",
+      "context": "Nguồn cũng ghi nhận việc chuyển sang vải cotton công nghiệp trong thực hành hiện nay. Kỹ thuật và chất liệu có thể thay đổi trong đời sống cộng đồng.",
+      "scope": "Phạm vi Mông Hoa tại địa phương được khảo sát; không đại diện cho Mông Trắng, Mông Đen hay mọi vùng.",
+      "requiresContext": true
+    },
+    "thai": {
+      "source": "thai",
+      "description": "Khăn Piêu là điểm nhận diện quan trọng trong trang phục phụ nữ Thái Đen được VOV giới thiệu.",
+      "features": [
+        "Khăn Piêu thêu",
+        "Phân biệt Thái Đen và Thái Trắng"
+      ],
+      "origin": "Bài VOV về khăn Piêu dẫn lời cán bộ Bảo tàng Dân tộc học, mô tả việc truyền dạy kỹ thuật thêu từ bà, mẹ cho con gái.",
+      "context": "Khăn thể hiện kỹ năng và thẩm mỹ của người làm. Các chi tiết trong nguồn thuộc bối cảnh phụ nữ Thái Đen, không được áp dụng cho mọi nhóm Thái.",
+      "scope": "Nguồn tập trung vào khăn Piêu; ảnh áo và váy trên website là minh họa, chưa xác minh mẫu địa phương.",
+      "requiresContext": true
+    },
+    "dao": {
+      "source": "dao",
+      "description": "Nữ phục Dao Đỏ tại Cao Bằng được giới thiệu với khăn quấn đầu, các lớp áo, quần và trang trí thủ công.",
+      "features": [
+        "Khăn quấn đầu",
+        "Áo trong và áo khoác ngoài",
+        "Thêu, bông len đỏ và đồ bạc"
+      ],
+      "origin": "Nguồn tại Cao Bằng mô tả bộ nữ phục Dao Đỏ gồm khăn, áo trong, áo khoác ngoài, thắt lưng và quần. May, thêu là kỹ năng được truyền giữa các thế hệ.",
+      "context": "Bài ghi nhận khác biệt trong vấn khăn, xà cạp và chi tiết trang phục. Không ghép đồ Dao Đỏ với các nhóm Dao khác rồi gọi là một bộ truyền thống thống nhất.",
+      "scope": "Phạm vi Dao Đỏ tại Cao Bằng; hình minh họa chưa được cộng đồng xác nhận là một mẫu đầy đủ.",
+      "requiresContext": true
+    },
+    "muong": {
+      "source": "muong",
+      "description": "Nữ phục Mường được VOV mô tả với khăn đầu, áo ngắn và váy có cạp trang trí.",
+      "features": [
+        "Khăn đội đầu",
+        "Áo ngắn",
+        "Váy và cạp dệt hoa văn"
+      ],
+      "origin": "Bài VOV ghi nhận nghề trồng bông, dệt vải và lời kể của người thực hành tại Hòa Bình. Cạp váy là phần được dành nhiều công sức trang trí.",
+      "context": "Kỹ thuật dệt được trao truyền giữa các thế hệ; hoa văn có khác biệt giữa người làm và từng xứ Mường.",
+      "scope": "Không suy diễn ý nghĩa mọi hoa văn từ một mẫu; ảnh AI chưa đối chiếu hiện vật.",
+      "requiresContext": true
+    },
+    "cham": {
+      "source": "ethnic-overview",
+      "description": "Vietnam Tourism giới thiệu trang phục Chăm với áo phối sarong; kiểu áo nam và nữ có khác biệt.",
+      "features": [
+        "Sarong phối với áo",
+        "Kiểu tay áo khác nhau ở nam và nữ",
+        "Vải dệt cho những dịp quan trọng"
+      ],
+      "origin": "Nguồn mô tả sarong làm phần mặc dưới ở cả nam và nữ, phối với áo. Bài đề cập cộng đồng Chăm ven biển miền Trung và đồng bằng sông Cửu Long.",
+      "context": "Vải dệt có thể được dành cho nghi lễ và những dịp quan trọng. Cần xác định địa phương, cộng đồng và tín ngưỡng trước khi diễn giải một bộ trang phục.",
+      "scope": "Nguồn tổng quan, không đại diện cho mọi cộng đồng Chăm; không gán ý nghĩa nghi lễ cho hoa văn AI.",
+      "requiresContext": true
+    },
+    "khmer": {
+      "source": "khmer",
+      "description": "Trang phục cưới nữ Khmer Nam Bộ được bảo tàng giới thiệu với áo, xăm pốt và mão.",
+      "features": [
+        "Áo và xăm pốt",
+        "Mão trong trang phục cưới",
+        "Phụ kiện theo nghi lễ"
+      ],
+      "origin": "Bảo tàng Phụ nữ Nam Bộ giới thiệu hiện vật trang phục cưới, trong đó xăm pốt có thể dệt bằng tơ tằm hoặc sợi kim tuyến.",
+      "context": "Cách mặc và phụ kiện gắn với lễ cưới; bài ghi nhận biến đổi theo địa phương và thời gian. Không đồng nhất đồ cưới với trang phục thường ngày.",
+      "scope": "Nguồn về đồ cưới nữ; ảnh sản phẩm trên website không phải ảnh hiện vật bảo tàng.",
+      "requiresContext": true
+    },
+    "e-de": {
+      "source": "e-de",
+      "description": "Nữ phục Ê Đê có áo chui đầu và váy tấm quấn quanh thân, với các dải hoa văn dệt.",
+      "features": [
+        "Áo nữ chui đầu",
+        "Váy tấm quấn",
+        "Dải hoa văn dệt ngang"
+      ],
+      "origin": "Bài trên Báo Đắk Nông mô tả áo nữ có vạt trước sau bằng nhau và váy từ một tấm vải chữ nhật. Trang phục nam có áo và khố.",
+      "context": "Dệt vải là kỹ thuật tạo nên áo, váy và nhiều vật dụng. Cách mặc nam và nữ cần được trình bày riêng, không dùng một mẫu để đại diện cả hai.",
+      "scope": "Mô tả cấu trúc nhập môn; ảnh AI chưa xác minh nhóm địa phương hay ý nghĩa hoa văn.",
+      "requiresContext": true
+    }
+  }
+}

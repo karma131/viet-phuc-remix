@@ -1,21 +1,526 @@
 [
-{"id":"ao-dai","name":"Áo dài truyền thống hiện đại","category":"Phổ biến","region":"Toàn quốc","period":"Hiện đại","gender":"Nữ","silhouette":"dai","color":"#65816e","description":"Tà áo mềm mại, đường nét thanh lịch — một biểu tượng quen thuộc của thời trang Việt.","features":["Hai tà trước và sau","Quần dài đi cùng","Cổ và tay áo có nhiều biến thể"],"constraint":"Giữ hai tà và quần dài khi giới thiệu cấu trúc áo dài. Không gán mọi thiết kế hiện đại cho một thời kỳ lịch sử.","source":"ao-dai","occasions":["Tết Nguyên đán","Chụp ảnh kỷ yếu","Đám cưới","Sự kiện trường học","Dạo phố"],"accessories":["non-la","pearl","silk","mini","fan","flat"]},
-{"id":"ao-dai-cach-tan","name":"Áo dài cách tân","category":"Phổ biến","region":"Toàn quốc","period":"Hiện đại","gender":"Unisex","silhouette":"dai","color":"#cb9a86","description":"Một không gian sáng tạo đương đại trên cảm hứng tà áo dài.","features":["Tà áo được biến đổi","Chất liệu và cách phối hiện đại"],"constraint":"Luôn ghi rõ cách tân; không trình bày như phục dựng lịch sử.","source":"ao-dai","occasions":["Tết Nguyên đán","Dạo phố","Sự kiện trường học"],"accessories":["mini","pearl","flat","silk"]},
-{"id":"ao-dai-nam","name":"Áo dài nam","category":"Phổ biến","region":"Toàn quốc","period":"Hiện đại","gender":"Nam","silhouette":"ngu","color":"#405966","description":"Phom áo trang nhã dành cho các dịp lễ và phong cách đương đại.","features":["Tà áo dài","Quần dài","Phom dáng đa dạng"],"constraint":"Phân biệt áo dài nam đương đại với áo ngũ thân phục dựng.","source":"ao-dai","occasions":["Tết Nguyên đán","Đám cưới","Dịp trang trọng"],"accessories":["khan-dong","fan","silk"]},
-{"id":"ngu-than","name":"Áo ngũ thân tay chẽn","category":"Phổ biến","region":"Huế và nhiều địa phương","period":"Truyền thống","gender":"Unisex","silhouette":"ngu","color":"#a66e38","description":"Phom áo kín đáo, tay chẽn và cấu trúc năm thân đặc trưng.","features":["Năm thân áo","Tay chẽn","Cổ đứng và hàng khuy"],"constraint":"Giữ năm thân, cổ và hệ khuy khi trình bày là truyền thống. Thay đổi cấu trúc cần ghi rõ diễn giải hiện đại.","source":"pending","occasions":["Tết Nguyên đán","Tham quan di tích","Dịp trang trọng","Chụp ảnh concept cổ phục"],"accessories":["khan-dong","fan","flat","silk"]},
-{"id":"ao-tac","name":"Áo tấc (ngũ thân tay thụng)","category":"Phổ biến","region":"Nhiều địa phương","period":"Truyền thống","gender":"Unisex","silhouette":"tac","color":"#78644d","description":"Tay áo rộng tạo nên dáng vẻ trang trọng của áo ngũ thân tay thụng.","features":["Cấu trúc ngũ thân","Tay thụng rộng"],"constraint":"Không thay tay thụng bằng tay bó khi gọi là áo tấc truyền thống.","source":"pending","occasions":["Dịp trang trọng","Chụp ảnh concept cổ phục","Lễ hội văn hóa"],"accessories":["khan-dong","fan"]},
-{"id":"tu-than","name":"Áo tứ thân","category":"Phổ biến","region":"Bắc Bộ","period":"Truyền thống","gender":"Nữ","silhouette":"tu","color":"#796653","description":"Những vạt áo mở, yếm và dải thắt lưng gợi sắc màu văn hóa Bắc Bộ.","features":["Bốn thân áo","Vạt trước mở","Yếm và thắt lưng"],"constraint":"Phân biệt trang phục sinh hoạt, sân khấu và phục dựng; giữ cách phối yếm kín đáo trong bối cảnh di tích.","source":"pending","occasions":["Lễ hội văn hóa","Biểu diễn nghệ thuật","Chụp ảnh kỷ yếu"],"accessories":["belt","fan","silk","woven","flat"]},
-{"id":"ba-ba","name":"Áo bà ba","category":"Phổ biến","region":"Nam Bộ","period":"Truyền thống","gender":"Unisex","silhouette":"baba","color":"#755441","description":"Áo ngắn, gọn gàng, gần gũi với đời sống và hình ảnh Nam Bộ.","features":["Áo ngắn cài khuy trước","Quần dài","Phom gọn, dễ vận động"],"constraint":"Không khẳng định một nguồn gốc hay niên đại duy nhất khi chưa có đối chiếu học thuật.","source":"overview","occasions":["Dạo phố","Lễ hội văn hóa","Biểu diễn nghệ thuật"],"accessories":["non-la","woven","flat","silk"]},
-{"id":"nhat-binh","name":"Áo Nhật Bình","category":"Lịch sử","region":"Huế","period":"Lịch sử","gender":"Nữ","silhouette":"nhat","color":"#b04444","description":"Cảm hứng trang phục cung đình Nguyễn với mảng cổ áo nổi bật.","features":["Cổ áo tạo mảng chữ nhật","Tay rộng","Trang trí có quy ước"],"constraint":"Cấp bậc, màu và hoa văn cần nguồn chuyên khảo. Không gọi bản minh họa là phục dựng chính xác.","source":"pending","occasions":["Chụp ảnh concept cổ phục","Lễ hội văn hóa","Dịp trang trọng"],"accessories":["fan","pin","pearl"]},
-{"id":"giao-linh","name":"Áo giao lĩnh","category":"Lịch sử","region":"Nhiều địa phương","period":"Lịch sử","gender":"Unisex","silhouette":"giao","color":"#658078","description":"Dáng cổ giao nhau; cấu trúc và cách mặc thay đổi theo bối cảnh.","features":["Cổ áo giao nhau","Vạt chéo"],"constraint":"Không gán một kiểu giao lĩnh cho mọi thời kỳ. Cần xác định mẫu tư liệu trước khi phục dựng.","source":"pending","occasions":["Chụp ảnh concept cổ phục","Biểu diễn nghệ thuật"],"accessories":["belt","fan"]},
-{"id":"vien-linh","name":"Áo viên lĩnh","category":"Lịch sử","region":"Nhiều địa phương","period":"Lịch sử","gender":"Unisex","silhouette":"vien","color":"#4d657d","description":"Trang phục cổ tròn được tìm hiểu qua tư liệu của từng thời kỳ.","features":["Cổ tròn","Tà áo dài"],"constraint":"Chi tiết cổ, tay và hoa văn cần đối chiếu mẫu; minh họa chỉ mang tính khái niệm.","source":"pending","occasions":["Chụp ảnh concept cổ phục","Biểu diễn nghệ thuật"],"accessories":["belt","fan"]},
-{"id":"doi-kham","name":"Áo đối khâm","category":"Lịch sử","region":"Nhiều địa phương","period":"Lịch sử","gender":"Unisex","silhouette":"doi","color":"#8d665f","description":"Hai vạt trước đối nhau, mở ra nhiều cách phối theo tư liệu.","features":["Hai vạt trước đối nhau","Áo trong đi cùng"],"constraint":"Xác minh áo trong và cách phối theo bối cảnh cụ thể; không suy diễn niên đại.","source":"pending","occasions":["Chụp ảnh concept cổ phục","Biểu diễn nghệ thuật"],"accessories":["belt","fan"]},
-{"id":"tay","name":"Trang phục dân tộc Tày","category":"Dân tộc","region":"Đông Bắc","period":"Cộng đồng","gender":"Unisex","silhouette":"static","color":"#344454","description":"Gợi mở về trang phục Tày; cần xác định địa phương và người mặc cụ thể.","features":["Biến thể theo địa phương","Chất liệu và chi tiết cần khảo sát"],"constraint":"Không dùng một bộ áo đại diện cho toàn bộ người Tày. Minh họa ý niệm, chưa phải mẫu cộng đồng đã xác minh.","source":"pending","occasions":["Lễ hội văn hóa","Sự kiện trường học"],"accessories":["silver"]},
-{"id":"mong","name":"Trang phục dân tộc Mông","category":"Dân tộc","region":"Miền núi phía Bắc","period":"Cộng đồng","gender":"Unisex","silhouette":"static","color":"#6f4771","description":"Sự đa dạng giữa các nhóm và địa phương cần được nhìn nhận riêng.","features":["Biến thể theo nhóm địa phương","Kỹ thuật trang trí đa dạng"],"constraint":"Cần xác định nhóm Mông và địa phương trước khi phối. Không trộn hoa văn và phụ kiện của các nhóm rồi gọi là truyền thống.","source":"pending","occasions":["Lễ hội văn hóa","Sự kiện trường học"],"accessories":["silver"]},
-{"id":"thai","name":"Trang phục dân tộc Thái","category":"Dân tộc","region":"Tây Bắc","period":"Cộng đồng","gender":"Unisex","silhouette":"static","color":"#647d65","description":"Những cách mặc khác nhau của các cộng đồng Thái và từng địa phương.","features":["Biến thể cộng đồng","Trang phục theo dịp sử dụng"],"constraint":"Không đồng nhất Thái Đen, Thái Trắng hay mọi địa phương. Cần nguồn cộng đồng để xác định mẫu.","source":"pending","occasions":["Lễ hội văn hóa","Sự kiện trường học"],"accessories":["silver"]},
-{"id":"dao","name":"Trang phục dân tộc Dao","category":"Dân tộc","region":"Miền núi phía Bắc","period":"Cộng đồng","gender":"Unisex","silhouette":"static","color":"#9f4145","description":"Trang phục gắn với từng nhóm Dao; chi tiết có ý nghĩa trong cộng đồng.","features":["Biến thể theo nhóm Dao","Phụ kiện theo bối cảnh"],"constraint":"Xác định nhóm Dao cụ thể; không tùy ý sử dụng vật dụng nghi lễ hay ghép các nhóm.","source":"pending","occasions":["Lễ hội văn hóa","Sự kiện trường học"],"accessories":["silver"]},
-{"id":"muong","name":"Trang phục dân tộc Mường","category":"Dân tộc","region":"Hòa Bình và vùng lân cận","period":"Cộng đồng","gender":"Unisex","silhouette":"static","color":"#6a6c52","description":"Khám phá trang phục Mường qua hiện vật và lời kể tại địa phương.","features":["Biến thể địa phương","Chi tiết dệt cần đối chiếu"],"constraint":"Không suy diễn ý nghĩa hoa văn. Minh họa chưa xác minh với một cộng đồng cụ thể.","source":"pending","occasions":["Lễ hội văn hóa","Sự kiện trường học"],"accessories":["silver"]},
-{"id":"cham","name":"Trang phục dân tộc Chăm","category":"Dân tộc","region":"Nam Trung Bộ và Nam Bộ","period":"Cộng đồng","gender":"Unisex","silhouette":"static","color":"#b98f57","description":"Bối cảnh địa phương và tín ngưỡng tạo nên những cách mặc khác nhau.","features":["Biến thể địa phương và cộng đồng","Cách quấn và phụ kiện cần nguồn"],"constraint":"Phân biệt cộng đồng, tín ngưỡng và dịp mặc; không dùng một mẫu cho mọi người Chăm.","source":"pending","occasions":["Lễ hội văn hóa","Sự kiện trường học"],"accessories":["silk"]},
-{"id":"khmer","name":"Trang phục dân tộc Khmer","category":"Dân tộc","region":"Nam Bộ","period":"Cộng đồng","gender":"Unisex","silhouette":"static","color":"#a78347","description":"Tìm hiểu trang phục Khmer Nam Bộ trong đời sống và dịp lễ.","features":["Trang phục theo dịp","Biến thể người mặc và địa phương"],"constraint":"Tách trang phục lễ hội, sân khấu và đời thường; không khẳng định ý nghĩa nghi lễ khi thiếu nguồn.","source":"pending","occasions":["Lễ hội văn hóa","Sự kiện trường học"],"accessories":["silk"]},
-{"id":"e-de","name":"Trang phục dân tộc Ê Đê","category":"Dân tộc","region":"Tây Nguyên","period":"Cộng đồng","gender":"Unisex","silhouette":"static","color":"#493b3a","description":"Không gian tìm hiểu trang phục Ê Đê cùng tri thức của cộng đồng.","features":["Biến thể địa phương","Kỹ thuật dệt và cách mặc cần đối chiếu"],"constraint":"Không sao chép hoa văn nghi lễ thiếu ngữ cảnh. Một minh họa không đại diện cho mọi người Ê Đê.","source":"pending","occasions":["Lễ hội văn hóa","Sự kiện trường học"],"accessories":["silver"]}
+  {
+    "id": "ao-dai",
+    "name": "Áo dài truyền thống hiện đại",
+    "category": "Phổ biến",
+    "region": "Toàn quốc",
+    "period": "Hiện đại",
+    "gender": "Nữ",
+    "silhouette": "dai",
+    "color": "#65816e",
+    "description": "Áo dài đương đại có hai tà, mặc cùng quần dài; cổ, tay và chất liệu có nhiều biến thể.",
+    "features": [
+      "Hai tà trước và sau",
+      "Mặc cùng quần dài",
+      "Cổ và tay có nhiều kiểu"
+    ],
+    "constraint": "Cấu trúc và cách dùng đương đại; không khẳng định danh hiệu pháp lý về quốc phục.",
+    "source": "ao-dai",
+    "occasions": [
+      "Tết Nguyên đán",
+      "Chụp ảnh kỷ yếu",
+      "Đám cưới",
+      "Sự kiện trường học",
+      "Dạo phố"
+    ],
+    "accessories": [
+      "non-la",
+      "pearl",
+      "silk",
+      "mini",
+      "fan",
+      "flat"
+    ],
+    "requiresContext": false
+  },
+  {
+    "id": "ao-dai-cach-tan",
+    "name": "Áo dài cách tân",
+    "category": "Phổ biến",
+    "region": "Toàn quốc",
+    "period": "Hiện đại",
+    "gender": "Unisex",
+    "silhouette": "dai",
+    "color": "#cb9a86",
+    "description": "Những thiết kế biến đổi cổ, tay hoặc độ dài tà trên nền áo dài đương đại.",
+    "features": [
+      "Cổ và tay được biến đổi",
+      "Độ dài tà tùy thiết kế"
+    ],
+    "constraint": "Không coi mẫu cách tân là phục dựng của một triều đại.",
+    "source": "ao-dai",
+    "occasions": [
+      "Tết Nguyên đán",
+      "Dạo phố",
+      "Sự kiện trường học"
+    ],
+    "accessories": [
+      "mini",
+      "pearl",
+      "flat",
+      "silk"
+    ],
+    "requiresContext": false
+  },
+  {
+    "id": "ao-dai-nam",
+    "name": "Áo dài nam",
+    "category": "Phổ biến",
+    "region": "Toàn quốc",
+    "period": "Hiện đại",
+    "gender": "Nam",
+    "silhouette": "ngu",
+    "color": "#405966",
+    "description": "Áo dài dành cho nam trong thực hành đương đại, phân biệt với áo ngũ thân theo cấu trúc.",
+    "features": [
+      "Áo dài mặc cùng quần",
+      "Phân biệt với ngũ thân"
+    ],
+    "constraint": "Không đồng nhất áo dài nam đương đại với áo ngũ thân.",
+    "source": "ao-dai",
+    "occasions": [
+      "Tết Nguyên đán",
+      "Đám cưới",
+      "Dịp trang trọng"
+    ],
+    "accessories": [
+      "khan-dong",
+      "fan",
+      "silk"
+    ],
+    "requiresContext": false
+  },
+  {
+    "id": "ngu-than",
+    "name": "Áo ngũ thân tay chẽn",
+    "category": "Phổ biến",
+    "region": "Huế và nhiều địa phương",
+    "period": "Truyền thống",
+    "gender": "Unisex",
+    "silhouette": "ngu",
+    "color": "#a66e38",
+    "description": "Áo năm thân, có thân con bên trong, cổ đứng và năm khuy; tay chẽn là một dạng thường phục.",
+    "features": [
+      "Năm thân, gồm thân con",
+      "Cổ đứng, năm khuy",
+      "Tay chẽn, thân không chiết eo"
+    ],
+    "constraint": "Đối chiếu hiện vật khi xác định chiều dài, khuy và chất liệu; nguồn tổng quan không xác nhận mẫu SVG.",
+    "source": "ngu-than",
+    "occasions": [
+      "Tết Nguyên đán",
+      "Tham quan di tích",
+      "Dịp trang trọng",
+      "Chụp ảnh concept cổ phục"
+    ],
+    "accessories": [
+      "khan-dong",
+      "fan",
+      "flat",
+      "silk"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "ao-tac",
+    "name": "Áo tấc (ngũ thân tay thụng)",
+    "category": "Phổ biến",
+    "region": "Nhiều địa phương",
+    "period": "Truyền thống",
+    "gender": "Unisex",
+    "silhouette": "tac",
+    "color": "#78644d",
+    "description": "Áo ngũ thân tay rộng, thường được nhắc đến trong bối cảnh lễ phục.",
+    "features": [
+      "Năm thân áo",
+      "Tay dài, rộng",
+      "Cổ đứng, năm khuy"
+    ],
+    "constraint": "Giữ tay rộng khi giới thiệu cấu trúc; không suy ra phẩm cấp chỉ từ màu trong Studio.",
+    "source": "ao-tac",
+    "occasions": [
+      "Dịp trang trọng",
+      "Chụp ảnh concept cổ phục",
+      "Lễ hội văn hóa"
+    ],
+    "accessories": [
+      "khan-dong",
+      "fan"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "tu-than",
+    "name": "Áo tứ thân",
+    "category": "Phổ biến",
+    "region": "Bắc Bộ",
+    "period": "Truyền thống",
+    "gender": "Nữ",
+    "silhouette": "tu",
+    "color": "#796653",
+    "description": "Áo bốn thân với vạt trước mở, đi cùng yếm, váy và dây lưng trong mô tả trang phục Bắc Bộ.",
+    "features": [
+      "Bốn thân áo",
+      "Vạt trước không cài khuy",
+      "Yếm, váy và dây lưng"
+    ],
+    "constraint": "Mô tả cấu trúc từ bài triển lãm; không ấn định một niên đại khởi đầu.",
+    "source": "tu-than",
+    "occasions": [
+      "Lễ hội văn hóa",
+      "Biểu diễn nghệ thuật",
+      "Chụp ảnh kỷ yếu"
+    ],
+    "accessories": [
+      "belt",
+      "fan",
+      "silk",
+      "woven",
+      "flat"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "ba-ba",
+    "name": "Áo bà ba",
+    "category": "Phổ biến",
+    "region": "Nam Bộ",
+    "period": "Truyền thống",
+    "gender": "Unisex",
+    "silhouette": "baba",
+    "color": "#755441",
+    "description": "Áo ngắn mở phía trước; một hiện vật ở Smithsonian có túi đắp và xẻ hông.",
+    "features": [
+      "Áo ngắn mở trước",
+      "Túi đắp trên hiện vật tham khảo",
+      "Xẻ hông trên hiện vật tham khảo"
+    ],
+    "constraint": "Đặc điểm mô tả gắn với hiện vật nmah_1313335, không áp dụng cho mọi áo bà ba.",
+    "source": "ba-ba",
+    "occasions": [
+      "Dạo phố",
+      "Lễ hội văn hóa",
+      "Biểu diễn nghệ thuật"
+    ],
+    "accessories": [
+      "non-la",
+      "woven",
+      "flat",
+      "silk"
+    ],
+    "requiresContext": false
+  },
+  {
+    "id": "nhat-binh",
+    "name": "Áo Nhật Bình",
+    "category": "Lịch sử",
+    "region": "Huế",
+    "period": "Lịch sử",
+    "gender": "Nữ",
+    "silhouette": "nhat",
+    "color": "#b04444",
+    "description": "Trang phục nữ thời Nguyễn, nổi bật với cổ bản rộng tạo mảng chữ nhật trước ngực.",
+    "features": [
+      "Cổ bản rộng dạng chữ nhật",
+      "Hai vạt đối nhau",
+      "Màu và hoa văn có quy định"
+    ],
+    "constraint": "Bài chuyên khảo phổ thông; mẫu ảnh và SVG không được xác nhận là phục dựng.",
+    "source": "nhat-binh",
+    "occasions": [
+      "Chụp ảnh concept cổ phục",
+      "Lễ hội văn hóa",
+      "Dịp trang trọng"
+    ],
+    "accessories": [
+      "fan",
+      "pin",
+      "pearl"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "giao-linh",
+    "name": "Áo giao lĩnh",
+    "category": "Lịch sử",
+    "region": "Nhiều địa phương",
+    "period": "Lịch sử",
+    "gender": "Unisex",
+    "silhouette": "giao",
+    "color": "#658078",
+    "description": "Tên gọi nhận diện kiểu cổ áo giao nhau trước ngực.",
+    "features": [
+      "Cổ áo giao nhau",
+      "Vạt chéo trước ngực"
+    ],
+    "constraint": "Không ấn định niên đại, tầng lớp hay một bộ rập chung từ tên kiểu cổ.",
+    "source": "giao-linh",
+    "occasions": [
+      "Chụp ảnh concept cổ phục",
+      "Biểu diễn nghệ thuật"
+    ],
+    "accessories": [
+      "belt",
+      "fan"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "vien-linh",
+    "name": "Áo viên lĩnh",
+    "category": "Lịch sử",
+    "region": "Nhiều địa phương",
+    "period": "Lịch sử",
+    "gender": "Unisex",
+    "silhouette": "vien",
+    "color": "#4d657d",
+    "description": "Kiểu áo được nhận diện bằng cổ tròn trong phóng sự ảnh về tái hiện cổ phục.",
+    "features": [
+      "Cổ tròn",
+      "Chi tiết phụ thuộc mẫu tư liệu"
+    ],
+    "constraint": "Nguồn xác nhận cách nhận diện cổ; chưa xác nhận kiểu tay, rập hoặc phẩm cấp của mẫu trên website.",
+    "source": "vien-linh",
+    "occasions": [
+      "Chụp ảnh concept cổ phục",
+      "Biểu diễn nghệ thuật"
+    ],
+    "accessories": [
+      "belt",
+      "fan"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "doi-kham",
+    "name": "Áo đối khâm",
+    "category": "Lịch sử",
+    "region": "Nhiều địa phương",
+    "period": "Lịch sử",
+    "gender": "Unisex",
+    "silhouette": "doi",
+    "color": "#8d665f",
+    "description": "Tên kiểu hai vạt đối nhau; bài nghiên cứu Nhật Bình dùng thuật ngữ đối khâm để mô tả áo.",
+    "features": [
+      "Hai vạt trước đối nhau",
+      "Lớp mặc trong cần đối chiếu"
+    ],
+    "constraint": "Phạm vi thuật ngữ và cấu trúc; không gán mẫu này cho triều đại cụ thể.",
+    "source": "nhat-binh",
+    "occasions": [
+      "Chụp ảnh concept cổ phục",
+      "Biểu diễn nghệ thuật"
+    ],
+    "accessories": [
+      "belt",
+      "fan"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "tay",
+    "name": "Trang phục dân tộc Tày",
+    "category": "Dân tộc",
+    "region": "Đông Bắc",
+    "period": "Cộng đồng",
+    "gender": "Unisex",
+    "silhouette": "static",
+    "color": "#344454",
+    "description": "Sắc chàm và đen là đặc điểm được VOV ghi nhận trong trang phục Tày, với cách may khác nhau ở nam và nữ.",
+    "features": [
+      "Vải bông hoặc lụa màu chàm, đen",
+      "Áo nữ và nam có cấu trúc riêng"
+    ],
+    "constraint": "Nguồn là mẫu được trình diễn tại sự kiện VOV; ảnh AI không sao chép hay xác nhận một bộ hiện vật.",
+    "source": "tay",
+    "occasions": [
+      "Lễ hội văn hóa",
+      "Sự kiện trường học"
+    ],
+    "accessories": [
+      "silver"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "mong",
+    "name": "Trang phục dân tộc Mông",
+    "category": "Dân tộc",
+    "region": "Miền núi phía Bắc",
+    "period": "Cộng đồng",
+    "gender": "Unisex",
+    "silhouette": "static",
+    "color": "#6f4771",
+    "description": "Kỹ thuật vẽ sáp ong, nhuộm chàm, thêu và ghép vải được VTV ghi nhận ở trang phục Mông Hoa tại Chế Cu Nha.",
+    "features": [
+      "Vẽ hoa văn bằng sáp ong",
+      "Nhuộm chàm",
+      "Thêu và ghép vải"
+    ],
+    "constraint": "Phạm vi Mông Hoa tại địa phương được khảo sát; không đại diện cho Mông Trắng, Mông Đen hay mọi vùng.",
+    "source": "mong",
+    "occasions": [
+      "Lễ hội văn hóa",
+      "Sự kiện trường học"
+    ],
+    "accessories": [
+      "silver"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "thai",
+    "name": "Trang phục dân tộc Thái",
+    "category": "Dân tộc",
+    "region": "Tây Bắc",
+    "period": "Cộng đồng",
+    "gender": "Unisex",
+    "silhouette": "static",
+    "color": "#647d65",
+    "description": "Khăn Piêu là điểm nhận diện quan trọng trong trang phục phụ nữ Thái Đen được VOV giới thiệu.",
+    "features": [
+      "Khăn Piêu thêu",
+      "Phân biệt Thái Đen và Thái Trắng"
+    ],
+    "constraint": "Nguồn tập trung vào khăn Piêu; ảnh áo và váy trên website là minh họa, chưa xác minh mẫu địa phương.",
+    "source": "thai",
+    "occasions": [
+      "Lễ hội văn hóa",
+      "Sự kiện trường học"
+    ],
+    "accessories": [
+      "silver"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "dao",
+    "name": "Trang phục dân tộc Dao",
+    "category": "Dân tộc",
+    "region": "Miền núi phía Bắc",
+    "period": "Cộng đồng",
+    "gender": "Unisex",
+    "silhouette": "static",
+    "color": "#9f4145",
+    "description": "Nữ phục Dao Đỏ tại Cao Bằng được giới thiệu với khăn quấn đầu, các lớp áo, quần và trang trí thủ công.",
+    "features": [
+      "Khăn quấn đầu",
+      "Áo trong và áo khoác ngoài",
+      "Thêu, bông len đỏ và đồ bạc"
+    ],
+    "constraint": "Phạm vi Dao Đỏ tại Cao Bằng; hình minh họa chưa được cộng đồng xác nhận là một mẫu đầy đủ.",
+    "source": "dao",
+    "occasions": [
+      "Lễ hội văn hóa",
+      "Sự kiện trường học"
+    ],
+    "accessories": [
+      "silver"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "muong",
+    "name": "Trang phục dân tộc Mường",
+    "category": "Dân tộc",
+    "region": "Hòa Bình và vùng lân cận",
+    "period": "Cộng đồng",
+    "gender": "Unisex",
+    "silhouette": "static",
+    "color": "#6a6c52",
+    "description": "Nữ phục Mường được VOV mô tả với khăn đầu, áo ngắn và váy có cạp trang trí.",
+    "features": [
+      "Khăn đội đầu",
+      "Áo ngắn",
+      "Váy và cạp dệt hoa văn"
+    ],
+    "constraint": "Không suy diễn ý nghĩa mọi hoa văn từ một mẫu; ảnh AI chưa đối chiếu hiện vật.",
+    "source": "muong",
+    "occasions": [
+      "Lễ hội văn hóa",
+      "Sự kiện trường học"
+    ],
+    "accessories": [
+      "silver"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "cham",
+    "name": "Trang phục dân tộc Chăm",
+    "category": "Dân tộc",
+    "region": "Nam Trung Bộ và Nam Bộ",
+    "period": "Cộng đồng",
+    "gender": "Unisex",
+    "silhouette": "static",
+    "color": "#b98f57",
+    "description": "Vietnam Tourism giới thiệu trang phục Chăm với áo phối sarong; kiểu áo nam và nữ có khác biệt.",
+    "features": [
+      "Sarong phối với áo",
+      "Kiểu tay áo khác nhau ở nam và nữ",
+      "Vải dệt cho những dịp quan trọng"
+    ],
+    "constraint": "Nguồn tổng quan, không đại diện cho mọi cộng đồng Chăm; không gán ý nghĩa nghi lễ cho hoa văn AI.",
+    "source": "ethnic-overview",
+    "occasions": [
+      "Lễ hội văn hóa",
+      "Sự kiện trường học"
+    ],
+    "accessories": [
+      "silk"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "khmer",
+    "name": "Trang phục dân tộc Khmer",
+    "category": "Dân tộc",
+    "region": "Nam Bộ",
+    "period": "Cộng đồng",
+    "gender": "Unisex",
+    "silhouette": "static",
+    "color": "#a78347",
+    "description": "Trang phục cưới nữ Khmer Nam Bộ được bảo tàng giới thiệu với áo, xăm pốt và mão.",
+    "features": [
+      "Áo và xăm pốt",
+      "Mão trong trang phục cưới",
+      "Phụ kiện theo nghi lễ"
+    ],
+    "constraint": "Nguồn về đồ cưới nữ; ảnh sản phẩm trên website không phải ảnh hiện vật bảo tàng.",
+    "source": "khmer",
+    "occasions": [
+      "Lễ hội văn hóa",
+      "Sự kiện trường học"
+    ],
+    "accessories": [
+      "silk"
+    ],
+    "requiresContext": true
+  },
+  {
+    "id": "e-de",
+    "name": "Trang phục dân tộc Ê Đê",
+    "category": "Dân tộc",
+    "region": "Tây Nguyên",
+    "period": "Cộng đồng",
+    "gender": "Unisex",
+    "silhouette": "static",
+    "color": "#493b3a",
+    "description": "Nữ phục Ê Đê có áo chui đầu và váy tấm quấn quanh thân, với các dải hoa văn dệt.",
+    "features": [
+      "Áo nữ chui đầu",
+      "Váy tấm quấn",
+      "Dải hoa văn dệt ngang"
+    ],
+    "constraint": "Mô tả cấu trúc nhập môn; ảnh AI chưa xác minh nhóm địa phương hay ý nghĩa hoa văn.",
+    "source": "e-de",
+    "occasions": [
+      "Lễ hội văn hóa",
+      "Sự kiện trường học"
+    ],
+    "accessories": [
+      "silver"
+    ],
+    "requiresContext": true
+  }
 ]
