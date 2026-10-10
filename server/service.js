@@ -38,7 +38,7 @@ export async function generateOutfit(body,env,options={}){
  if(!parsed.success)return {status:400,body:{error:'Vui lòng kiểm tra trang phục, dịp sử dụng và màu sắc.'}};
  const config=parsed.data;
  const provider=providerFor(env),key=provider==='gemini'?env.GEMINI_API_KEY:env.OPENAI_API_KEY;
- if(!key)return {status:200,body:samples(config,`Chưa cấu hình ${provider==='gemini'?'Gemini':'OpenAI'} API key.`)};
+ if(!key)return {status:200,body:samples(config,'Gợi ý cá nhân hóa chưa được thiết lập.')};
  if(active>=5)return {status:429,body:{error:'Studio đang bận. Vui lòng thử lại sau.'}};
  active++;
  try{
@@ -77,10 +77,10 @@ export async function generateOutfit(body,env,options={}){
    const facts=cultural.entries[garment.id];
    look.culturalNote=`${facts.origin} ${facts.context} Nguồn: ${facts.source}. ${facts.scope}`;
   }
-  return {status:200,body:{...output,mode:provider,message:`Bản gốc giữ nguyên · ${provider==='gemini'?'Gemini':'GPT'} đề xuất bản thanh lịch và bản sáng tạo`}};
+  return {status:200,body:{...output,mode:provider,message:'Bản gốc giữ nguyên · Khám phá thêm bản phối thanh lịch và sáng tạo'}};
  }catch(error){
-  const label=provider==='gemini'?'Gemini':'GPT';
-  const reason=error.status===401||error.status===403?`${provider==='gemini'?'Gemini':'OpenAI'} API key chưa hợp lệ. Hãy kiểm tra cấu hình máy chủ.`:error.status===429?`${label} đang giới hạn lượt gọi hoặc hạn mức tài khoản. Vui lòng thử lại sau.`:['TimeoutError','AbortError'].includes(error.name)?`${label} đã quá thời gian chờ của máy chủ. Vui lòng thử lại.`:error.status===404||error.status===405?`${label}: endpoint hoặc model chưa được dịch vụ hỗ trợ (HTTP ${error.status}).`:error.status?`${label}: dịch vụ trả lỗi HTTP ${error.status}. Hãy kiểm tra model và cấu hình API.`:error.name==='ZodError'?`${label} trả JSON không đúng cấu trúc outfit. Vui lòng thử lại.`:error instanceof SyntaxError?`${label} trả dữ liệu không phải JSON hợp lệ. Vui lòng thử lại.`:`${label} chưa phản hồi hợp lệ. Bạn có thể thử lại.`;
+  const label='Dịch vụ gợi ý';
+  const reason=error.status===401||error.status===403?'Dịch vụ gợi ý chưa được kết nối hợp lệ.':error.status===429?`${label} đang giới hạn lượt gọi hoặc hạn mức tài khoản. Vui lòng thử lại sau.`:['TimeoutError','AbortError'].includes(error.name)?`${label} đã quá thời gian chờ của máy chủ. Vui lòng thử lại.`:error.status===404||error.status===405?`${label}: endpoint hoặc model chưa được dịch vụ hỗ trợ (HTTP ${error.status}).`:error.status?`${label}: dịch vụ trả lỗi HTTP ${error.status}. Hãy kiểm tra model và cấu hình API.`:error.name==='ZodError'?`${label} trả JSON không đúng cấu trúc outfit. Vui lòng thử lại.`:error instanceof SyntaxError?`${label} trả dữ liệu không phải JSON hợp lệ. Vui lòng thử lại.`:`${label} chưa phản hồi hợp lệ. Bạn có thể thử lại.`;
   return {status:200,body:samples(config,reason)};
  }finally{active--;}
 }

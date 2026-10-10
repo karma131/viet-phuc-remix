@@ -43,7 +43,7 @@ test('Gemini locks the original and geometry while retaining distinct variant pr
  assert.equal(result.body.mode,'gemini');assert.deepEqual(result.body.looks[0].colors,{primary:config.primaryColor,secondary:config.secondaryColor,accessory:config.accessoryColor});assert.deepEqual(result.body.looks[0].accessories,config.accessories);assert.equal(result.body.looks[0].style,config.style);assert.notEqual(result.body.looks[2].colors.primary,config.primaryColor);for(const look of result.body.looks){assert.equal(look.occasion,config.occasion);assert.equal(look.patternEnabled,false);assert.equal(look.avatar,2);assert.ok(look.imagePrompt.includes(look.colors.primary))}
 });
 test('missing Gemini key and blocked output return labeled SVG-ready samples',async()=>{
- const absent=await generateOutfit(config,{AI_PROVIDER:'gemini',OPENAI_API_KEY:'not-a-google-key'});assert.equal(absent.body.mode,'sample');assert.match(absent.body.message,/Gemini/);
+ const absent=await generateOutfit(config,{AI_PROVIDER:'gemini',OPENAI_API_KEY:'not-a-google-key'});assert.equal(absent.body.mode,'sample');assert.match(absent.body.message,/chưa được thiết lập/);
  const blocked=await generateOutfit(config,{AI_PROVIDER:'gemini',GEMINI_API_KEY:'test'},{retries:0,fetchImpl:async()=>Response.json({candidates:[{finishReason:'SAFETY'}]})});assert.equal(blocked.body.mode,'sample');assert.deepEqual(blocked.body.looks[0].accessories,config.accessories);assert.equal(aiHealth({AI_PROVIDER:'gemini',GEMINI_API_KEY:'test'}).image,false);
 });
 test('optional Gemini fashion image uses authoritative selected attributes and valid inline image data',async()=>{

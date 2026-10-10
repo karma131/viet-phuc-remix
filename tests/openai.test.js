@@ -9,7 +9,7 @@ const mockOutput=(input=config)=>({status:'completed',output:[{type:'message',co
 
 test('OpenAI key is required; a legacy Google key never enables requests',async()=>{
  const output=await generateOutfit(config,{GEMINI_API_KEY:'legacy-key'});
- assert.equal(output.body.mode,'sample');assert.match(output.body.message,/OpenAI/);
+ assert.equal(output.body.mode,'sample');assert.match(output.body.message,/chưa được thiết lập/);
  assert.deepEqual(aiHealth({OPENAI_API_KEY:'test'}),{ok:true,provider:'openai',openai:true,gemini:false,image:false});
 });
 test('Responses request uses strict structured output and keeps credentials out of returned looks',async()=>{
@@ -23,7 +23,7 @@ test('Responses request uses strict structured output and keeps credentials out 
 });
 test('invalid API credentials fall back once without retrying or leaking provider messages',async()=>{
  let calls=0;const result=await generateOutfit(config,{OPENAI_API_KEY:'secret'},{fetchImpl:async()=>{calls++;return Response.json({error:{message:'secret'}},{status:401})}});
- assert.equal(calls,1);assert.equal(result.body.mode,'sample');assert.match(result.body.message,/key chưa hợp lệ/);assert.ok(!JSON.stringify(result.body).includes('secret'));
+ assert.equal(calls,1);assert.equal(result.body.mode,'sample');assert.match(result.body.message,/chưa được kết nối hợp lệ/);assert.doesNotMatch(result.body.message,/GPT|Gemini|OpenAI/i);assert.ok(!JSON.stringify(result.body).includes('secret'));
 });
 test('custom base URL receives the configured model and server key without double slashes',async()=>{
  let calls=0;

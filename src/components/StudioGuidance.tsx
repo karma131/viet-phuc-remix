@@ -13,7 +13,7 @@ export function EventDiscovery({garments,occasion,onChoose}:{garments:Garment[];
 
 export function GarmentContext({garment}:{garment:Garment}){
  const entry=entries[garment.id];
- return <section className="demo-guidance garment-context"><h3>Hiểu chiếc áo bạn chọn</h3><p><strong>{garment.name}</strong> · {garment.region} · {garment.period}</p><p>{entry.origin}</p><SourceLink id={entry.source}/><small>{entry.scope}</small><a className="text-button" href={'#/garment/'+garment.id}>Đọc đặc điểm và nguồn tham khảo →</a></section>;
+ return <section className="demo-guidance garment-context"><h3>Hiểu chiếc áo bạn chọn</h3><p><strong>{garment.name}</strong> · {garment.region} · {garment.period}</p><p>{entry.origin}</p><p>{entry.context}</p><details><summary>Nguồn tham khảo & phạm vi tư liệu</summary><SourceLink id={entry.source}/><p className="muted">{entry.scope}</p></details><a className="text-button" href={'#/garment/'+garment.id}>Khám phá câu chuyện chiếc áo →</a></section>;
 }
 
 export function PaletteCheck({config}:{config:Config}){
