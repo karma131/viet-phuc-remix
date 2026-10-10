@@ -1,0 +1,8 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {garments,inputSchema,resultSchema,guard,samples} from '../server/logic.js';
+const config={garmentId:'ao-dai',occasion:'Tết Nguyên đán',style:'Thanh lịch',primaryColor:'#A32930',secondaryColor:'#FFF8EB',accessoryColor:'#D5AD62',accessories:['pearl','fan']};
+test('all 19 garment records have unique IDs and usable context',()=>{assert.equal(garments.length,19);assert.equal(new Set(garments.map(g=>g.id)).size,19);for(const g of garments){assert.ok(g.constraint);assert.ok(g.occasions.length);assert.ok(g.features.length)}});
+test('input rejects unknown garments, inappropriate occasions, invalid colors and accessories',()=>{assert.ok(inputSchema.safeParse(config).success);for(const change of [{garmentId:'unknown'},{occasion:'unknown'},{primaryColor:'red'},{accessories:['unknown']},{style:'anything'}])assert.equal(inputSchema.safeParse({...config,...change}).success,false)});
+test('sample output is explicit, valid, distinct and respects garment accessories',()=>{const out=samples({...config,accessories:['pearl','belt']});assert.equal(out.mode,'sample');assert.ok(out.message.includes('Gợi ý mẫu'));assert.ok(resultSchema.safeParse(out).success);assert.equal(new Set(out.looks.map(l=>l.name)).size,3);assert.ok(out.looks.every(l=>!l.accessories.includes('belt')&&l.culturalStatus==='consider'))});
+test('community fusion gets a warning and missing specialist sources cannot be marked appropriate',()=>{assert.equal(guard({...config,garmentId:'mong',style:'Đường phố kết hợp',accessories:[]}).status,'not_recommended');assert.equal(guard({...config,garmentId:'ngu-than',accessories:[]}).status,'consider');assert.equal(guard(config).status,'appropriate')});

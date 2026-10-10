@@ -1,0 +1,3 @@
+export interface Garment {id:string;name:string;category:string;region:string;period:string;gender:string;silhouette:string;color:string;description:string;features:string[];constraint:string;source:string;occasions:string[];accessories:string[]}
+export interface Config {garmentId:string;occasion:string;style:string;primaryColor:string;secondaryColor:string;accessoryColor:string;accessories:string[]}
+export interface Look {id:string;name:string;garmentId:string;style:string;occasion:string;colors:{primary:string;secondary:string;accessory?:string};accessories:string[];stylingReason:string;culturalNote:string;culturalStatus:'appropriate'|'consider'|'not_recommended';culturalWarning:string|null;imagePrompt:string;mode?:string}

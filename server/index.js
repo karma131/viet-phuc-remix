@@ -1,0 +1,10 @@
+import express from 'express';
+import {generateOutfit,visualizeOutfit} from './service.js';
+import {fileURLToPath} from 'node:url';
+const app=express();app.use(express.json({limit:'40kb'}));
+app.get('/api/health',(_,res)=>res.json({ok:true,gemini:!!process.env.GEMINI_API_KEY,image:!!(process.env.GEMINI_API_KEY&&process.env.GEMINI_IMAGE_MODEL)}));
+app.post('/api/generate-outfit',async(req,res)=>{const out=await generateOutfit(req.body,process.env);res.status(out.status).json(out.body)});
+app.post('/api/visualize',async(req,res)=>{const out=await visualizeOutfit(req.body,process.env);res.status(out.status).json(out.body)});
+app.use(express.static('dist'));app.get('/{*path}',(_,res)=>res.sendFile(fileURLToPath(new URL('../dist/index.html',import.meta.url))));
+app.use((err,req,res,next)=>res.status(400).json({error:'Không thể xử lý dữ liệu gửi lên.'}));
+app.listen(process.env.PORT||3001,'127.0.0.1',()=>console.log(`API và bản build: http://127.0.0.1:${process.env.PORT||3001}`));

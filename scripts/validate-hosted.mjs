@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+const source=await readFile('dist/server/index.js','utf8');const worker=(await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`)).default;
+assert.equal(typeof worker.fetch,'function');
+const home=await worker.fetch(new Request('https://example.test/'),{});assert.equal(home.status,200);assert.ok((await home.text()).includes('Việt Phục Remix'));
+const image=await worker.fetch(new Request('https://example.test/imperial-red-background.png'),{});assert.equal(image.headers.get('content-type'),'image/png');assert.equal((await image.arrayBuffer()).byteLength,2739977);
+const input={garmentId:'ao-dai',occasion:'Tết Nguyên đán',style:'Thanh lịch',primaryColor:'#A32930',secondaryColor:'#FFF8EB',accessories:['pearl']};
+const fallback=await worker.fetch(new Request('https://example.test/api/generate-outfit',{method:'POST',body:JSON.stringify(input)}),{});const data=await fallback.json();assert.equal(data.mode,'sample');assert.equal(data.looks.length,3);
+const invalid=await worker.fetch(new Request('https://example.test/api/generate-outfit',{method:'POST',body:'{}'}),{});assert.equal(invalid.status,400);
+console.log('Hosted Worker: HTML, exact background bytes, API fallback and invalid input verified.');

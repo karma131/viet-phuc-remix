@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+*.log
+worker/assets.generated.js
+*.tar.gz
+*.tsbuildinfo
