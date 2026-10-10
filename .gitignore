@@ -5,3 +5,4 @@ dist/
 worker/assets.generated.js
 *.tar.gz
 *.tsbuildinfo
+homepage-preview*.jpg

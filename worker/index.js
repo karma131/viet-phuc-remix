@@ -1,9 +1,9 @@
-import {generateOutfit,visualizeOutfit} from '../server/service.js';
+import {generateOutfit,visualizeOutfit,aiHealth} from '../server/service.js';
 import assets from './assets.generated.js';
 const json=(body,status=200)=>Response.json(body,{status,headers:{'Cache-Control':'no-store'}});
 export default {async fetch(request,env){
  const path=new URL(request.url).pathname;
- if(path==='/api/health')return json({ok:true,gemini:!!env.GEMINI_API_KEY,image:!!(env.GEMINI_API_KEY&&env.GEMINI_IMAGE_MODEL)});
+ if(path==='/api/health')return json(aiHealth(env));
  if(path.startsWith('/api/')){
   if(request.method!=='POST')return json({error:'Phương thức không được hỗ trợ.'},405);
   if(!['/api/generate-outfit','/api/visualize'].includes(path))return json({error:'Không tìm thấy chức năng.'},404);
